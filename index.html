@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resproject</title>
+		<link rel="stylesheet" href="css/style.css" type"text/css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+		<script src="js/jquery.js"></script>
+		<script>
+			//Toggel for width display
+			var showWidth = 1;
+
+			if(showWidth == 1){
+				$(document).ready(function(){
+					$(window).resize(function(){
+						var width = $(window).width();
+						document.getElementById("output_width").innerHTML="window Width:"+width.toString();
+					});
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div id="output_width"></div>
+		<div id="container">
+			<header class="main-header">
+				<img id="logo" src="images/logo.png" alt="Resproject"/>
+				<nav class="main-nav">
+					<ul>
+						<li><a  class="active" href="#">home</a></li>
+						<li><a href="#">Learn</a></li>
+						<li><a href="#">Brainstorm</a></li>
+						<li><a href="#">Create</a></li>
+						<li><a href="#">Collaborate</a></li>
+						<li><a href="#">Teach</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="main">
+				<div id="content">
+					<article clas="art1">
+						<header class="art-header">
+							<h2 class="title"><a href="#">First post</a></h2>
+							<span>Created By: Mark Jensen on June 30, 2016</span>
+						</header>
+						<p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst
+						</p>
+						 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.
+						</p>
+						<a class="readmore" href="#">read more</a>
+					</article>
+								<article clas="art2">
+						<header class="art-header">
+							<h2 class="title"><a href="#">second post</a></h2>
+							<span>Created By: Mark Jensen on June 30, 2016</span>
+						</header>
+						<p>Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. 
+						</p>
+						Meningen med at bruge Lorem Ipsum er, at teksten indeholder mere eller mindre 
+						</p>
+						<a class="readmore" href="#">read more</a>
+					</article>
+				</div>
+				<aside id ="sidebar">
+					<div class="block">
+						<h2>Top Sidebar</h2>
+						<p>
+							I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock
+						</p>
+					</div>
+					<div class="block">
+						<h2>mid Sidebar</h2>
+						<p>
+							I modsætning til hvad mange tror, er Lorem Ipsum ikke bare tilfældig tekst. Det stammer fra et stykke litteratur på latin fra år 45 f.kr., hvilket gør teksten over 2000 år gammel. Richard McClintock
+						</p>
+					</div>
+					<div class="block">
+						<h2>bottom Sidebar</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+				</aside>
+			</div>
+			<div class="clr"></div>
+			<footer>
+				<p>Copyright &copy; 2013 - Resproject</p>
+			</footer>
+		</div>
+	</body>
+</html>
